@@ -32,16 +32,6 @@ header ul {
   position: relative;
 }
 
-#everybody h2{
-  position: absolute;
-  top: 0px;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 10em;
-  font-family: Helvetica;
-}
-
 #join-the-club article {
   float: left;
   width: 45%;
@@ -57,13 +47,27 @@ header ul {
   /*vertical-align: top;*/
 }
 
-#everybody {
-
-  clear: both;
+#everybody h2{
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 9em;
+  font-family: Helvetica;
+  padding: 10px;
 }
+
+#everybody {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
 #everybody img {
   position: relative;
   width: 100%;
+  height: 600px;
   top: 0px;
 }
 
@@ -92,16 +96,16 @@ header ul {
 #copyright-disclaimer {
 
   float: left;
-  max-width: 45%;
+  max-width: 48%;
   text-align: justify;
-  /*padding: 30px;*/
+  padding: 30px;
 }
 
 
-footer nav {
+#footer-navigation {
 
-  float: right;
-  max-width: 40%;
+  /*float: right;
+  max-width: 45%;*/
 
   /*padding: 200px;*/
   /*margin-top: 20px;
