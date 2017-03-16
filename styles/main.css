@@ -17,21 +17,58 @@ header ul {
 
 }
 
+/*section #join-the-club {
+  display: inline-block;
+}*/
+
+/*#join-the-club h2, #join-the-club p {
+  float: left;
+  width: 45%;
+  text-align: justify;
+  padding: 30px;
+}*/
+#everybody {
+  display: inline-block;
+  position: relative;
+}
+
+#everybody h2{
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 10em;
+  font-family: Helvetica;
+}
+
 #join-the-club article {
   float: left;
   width: 45%;
   text-align: justify;
+  padding: 30px;
+
 }
 
 #join-the-club img {
   float: right;
-  width: 40%;
-  padding: 20px;
-  margin: 10px;
+  max-width: 45%;
+  padding: 30px;
+  /*vertical-align: top;*/
 }
 
 #everybody {
+
   clear: both;
+}
+#everybody img {
+  position: relative;
+  width: 100%;
+  top: 0px;
+}
+
+#everybody h2 {
+  position absolute
 }
 
 /*#join-the-club {
@@ -52,19 +89,21 @@ header ul {
   margin-bottom: -5px;
 
 }
-footer section:nth-of-type(odd) {
-  clear: both;
+#copyright-disclaimer {
+
   float: left;
   max-width: 45%;
-  margin-right: 30px;
   text-align: justify;
+  /*padding: 30px;*/
 }
 
 
-footer nav:nth-of-type(even){
-  clear: both;
+footer nav {
+
   float: right;
-  max-width: 48%;
+  max-width: 40%;
+
+  /*padding: 200px;*/
   /*margin-top: 20px;
   padding-top: 20px;*/
 }
