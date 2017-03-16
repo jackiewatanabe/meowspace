@@ -8,15 +8,49 @@ header {
 
 }
 
-header h2 a{
+header h2 a {
   text-decoration: none;
+}
+
+header h2 {
+  float: left;
+}
+
+header nav {
+  float: right;
 }
 
 header ul {
   list-style: none;
+}
+
+main h1, main h2 {
+  text-align: center;
+}
+
+#main-logo {
+  /*display: inline-block;*/
+  position: relative;
+}
+#main-logo img {
+  /*position: relative;*/
+  width: 100%;
+  height: 400px;
+  top: 0px;
 
 }
 
+#main-logo h1 {
+
+  position: absolute;
+
+  top: 0px;
+  font-size: 10em;
+  box-sizing: border-box;
+  text-align: center;
+
+  font-family: Helvetica;
+}
 /*section #join-the-club {
   display: inline-block;
 }*/
@@ -27,12 +61,28 @@ header ul {
   text-align: justify;
   padding: 30px;
 }*/
-#everybody {
-  display: inline-block;
-  position: relative;
+
+section#popular-posts {
+
+  padding: 10px;
+  margin: 20px;
 }
 
+#popular-posts article {
+  float: left;
+  max-width: 25%;
+  /*border: 10px;
+  border-color: black;*/
+
+  border: solid #000;
+border-width: 3 5px;
+padding: 10px;
+
+}
+
+
 #join-the-club article {
+  clear: both;
   float: left;
   width: 45%;
   text-align: justify;
@@ -58,10 +108,16 @@ header ul {
   padding: 10px;
 }
 
+
 #everybody {
+
   clear: both;
+  display: inline-block;
+  position: relative;
   padding: 0;
-  margin: 0;
+  /*left: 0px;
+  right: 0px;
+  margin-left: 0px;*/
 }
 
 #everybody img {
@@ -69,11 +125,9 @@ header ul {
   width: 100%;
   height: 600px;
   top: 0px;
+
 }
 
-#everybody h2 {
-  position absolute
-}
 
 /*#join-the-club {
   text-align: center;
