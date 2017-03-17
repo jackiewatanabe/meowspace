@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two|Oswald|Pacifico|Quicksand|Roboto|Shadows+Into+Light');
-/** {
-  border-style: solid;
-  border-color: red;
-}*/
 
 html {
   box-sizing: border-box;
@@ -21,13 +17,12 @@ header {
   padding: 0px;
   margin: 0;
   font-family: Arial;
-
 }
 
 header h2 a {
   text-decoration: none;
   margin: 40px;
-  font-size: 1.5em;
+  font-size: 3vw;
 }
 
 header h2 a:visited {
@@ -71,6 +66,12 @@ header nav li a {
   color: black;
 }
 
+header nav li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
 main h1, main h2 {
   text-align: center;
 }
@@ -90,25 +91,20 @@ body {
 }
 
 #main-logo {
-
   /*display: inline-block;*/
   position: relative;
 }
 #main-logo img {
-
   /*position: relative;*/
   width: 100%;
-
   top: 0px;
   left: 0px;
-
 }
 
 #main-logo h1 {
-
   position: absolute;
   top: 70px;
-  font-size: 8em;
+  font-size: 10vw;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
@@ -116,6 +112,10 @@ body {
   font-style: italic;
   font-weight: bold;
   opacity: .75
+}
+
+#main-logo h1::nth-letter(5) {
+  text-transform: uppercase;
 }
 /*section #join-the-club {
 display: inline-block;
@@ -131,7 +131,6 @@ padding: 30px;
 section#popular-posts {
   padding: 0 10%;
   margin-bottom: 100px;
-
 }
 
 /*.clearfix:after {
@@ -140,18 +139,12 @@ section#popular-posts {
     clear:both;
 }*/
 
-div {
+/*div {
   margin: 30px;
   padding:10px;
   width: 95%;
   /*height: 980px;*/
-}
-
-/*#popular-posts {
-  padding-bottom: 40px;
-  margin: 20px;
-
-}*/
+/*}*/
 
 #popular-posts h2 {
   font-family: 'Amatic SC', cursive;
@@ -210,19 +203,15 @@ div {
   text-transform: uppercase;
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
-
   background-color: pink;
   color: white;
 }
 
 #join-the-club {
-
   clear: both;
   display: inline-block;
   background-color: grey;
   margin: -10px;
-
-
 }
 
 #join-the-club h2 {
@@ -235,75 +224,45 @@ div {
   float: left;
   width: 45%;
   text-align: justify;
-  padding: 50px;
+  padding: 20px;
   margin-left: 5%;
-
-
 }
 
 #join-the-club img {
-
-  float: right;
   max-width: 45%;
-  padding: 0px;
+  padding: 20px;
+}
 
-  /*vertical-align: top;*/
+#everybody {
+  clear: both;
+  /*display: inline-block;*/
+  position: relative;
+  padding: 0;
 }
 
 #everybody h2{
-  clear: both;
+  /*clear: both;*/
   position: absolute;
   top: 0px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  font-size: 750%;
+  font-size: 10vw;
   font-family: 'Amatic SC', cursive;
   padding: 30px;
 }
 
-
-#everybody {
-  clear: both;
-  display: inline-block;
-  position: relative;
-  padding: 0;
-  /*left: 0px;
-  right: 0px;
-  margin-left: 0px;*/
-  /*background-image: "assets/join_club.jpg";*/
-}
-
-
-
 #everybody img {
-  clear: both;
+  /*clear: both;*/
   position: relative;
   /*background-size: cover;*/
   width: 100%;
   top: 0px;
 }
 
-
-/*#join-the-club {
-text-align: center;
-}
-
-#join-the-club img {
-width: 100%;
-height: 350px;
-}*/
-
-
 #copyright-disclaimer h4 {
-  /*clear:both;
-  float: left;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  margin-bottom: -5px;*/
   display: inline-block;
   margin: 0;
-
 }
 
 p#disclaimer {
@@ -318,15 +277,9 @@ p#disclaimer {
   float: left;
 }
 
-
 #footer-navigation {
-
   float: left;
   padding: 30px;
-
-
-  /*margin-top: 20px;
-  padding-top: 20px;*/
 }
 
 #footer-navigation a {
