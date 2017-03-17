@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Oswald|Pacifico|Quicksand|Roboto|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two|Oswald|Pacifico|Quicksand|Roboto|Shadows+Into+Light');
 /** {
   border-style: solid;
   border-color: red;
 }*/
+
+
 
 header {
   /*border-bottom: : 10px;
@@ -19,10 +21,16 @@ header {
 
 header h2 a {
   text-decoration: none;
-
   margin: 40px;
-
   font-size: 1.5em;
+}
+
+header h2 a:visited {
+  color: black;
+}
+
+header h2 a:hover {
+  color: white;
 }
 /*
 header h2 a::nth-letter(5) {
@@ -32,22 +40,30 @@ text-transform: capitalize;
 
 header h2 {
   float: left;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  font-weight: bold;
 }
 
 header nav {
   float: right;
   margin-right: 40px;
+  font-family: 'Quicksand';
 }
 
 header ul {
   list-style: none;
-
 }
 
 header nav li {
   float: left;
   padding: 15px;
+}
+
+header nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
 main h1, main h2 {
@@ -59,8 +75,13 @@ main h1, main h2 {
  padding: 0px;
 }*/
 
+main {
+  margin-top: -5px;
+}
+
 body {
   margin:0px;
+  font-family: 'Quicksand';
 }
 
 #main-logo {
@@ -72,7 +93,7 @@ body {
 
   /*position: relative;*/
   width: 100%;
-  height: 400px;
+
   top: 0px;
   left: 0px;
 
@@ -81,13 +102,15 @@ body {
 #main-logo h1 {
 
   position: absolute;
-  top: 0px;
+  top: 70px;
   font-size: 8em;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
-  font-family: 'Pacifico', cursive;
-
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  font-weight: bold;
+  opacity: .75
 }
 /*section #join-the-club {
 display: inline-block;
@@ -102,14 +125,33 @@ padding: 30px;
 
 section#popular-posts {
 
-  padding: 10px;
-  margin: 40px;
+  /*padding: 10px;*/
+  /*margin: 40px;*/
+}
+
+div {
+  margin: 30px;
+  padding:10px;
+  width: 95%;
+  height: 980px;
+}
+
+/*#popular-posts {
+  padding-bottom: 40px;
+  margin: 20px;
+
+}*/
+
+#popular-posts h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
 }
 
 #popular-posts article {
   float: left;
-  width: 275px;
-  height: 300px;
+  width: 25%;
+  height: 350px;
+
 
   /*border: 10px;
   border-color: black;*/
@@ -124,19 +166,21 @@ section#popular-posts {
 }
 
 #popular-posts a {
-  border: solid #000;
+  border: dotted #000;
   border-width: 3 5px;
   padding: 10px;
   border-radius: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: arial;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
   color: black;
 }
 
 #popular-posts p {
   margin: 30px;
   text-align: center;
+  min-height: 175px;
 }
 
 #popular-posts a:hover {
@@ -146,22 +190,25 @@ section#popular-posts {
   border-radius: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: arial;
-  background-color: grey;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+
+  background-color: pink;
   color: white;
 }
 
 #join-the-club {
-  /*
-  clear: both;
-  border-style: solid;
-  border-color: gray;
-  border: 0 2px;*/
 
-  border-style: solid;
-  border-color: gray;
   clear: both;
+  display: inline-block;
   background-color: grey;
+  margin: -10px;
+
+}
+
+#join-the-club h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
 }
 
 #join-the-club article {
@@ -169,31 +216,34 @@ section#popular-posts {
   float: left;
   width: 45%;
   text-align: justify;
-  padding: 30px;
+  padding: 40px;
+
 
 }
 
 #join-the-club img {
+
   float: right;
   max-width: 45%;
-  padding: 30px;
+  padding: 0px;
+
   /*vertical-align: top;*/
 }
 
 #everybody h2{
+  clear: both;
   position: absolute;
   top: 0px;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
   font-size: 750%;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
   padding: 30px;
 }
 
 
 #everybody {
-
   clear: both;
   display: inline-block;
   position: relative;
@@ -207,12 +257,12 @@ section#popular-posts {
 
 
 #everybody img {
+  clear: both;
   position: relative;
   background-size: cover;
   width: 100%;
   height: 600px;
   top: 0px;
-
 }
 
 
@@ -238,7 +288,7 @@ height: 350px;
 }
 
 p#disclaimer {
-  display:inline;
+  display: inline;
 }
 
 #copyright-disclaimer {
@@ -246,15 +296,15 @@ p#disclaimer {
   width: 48%;
   text-align: justify;
   padding: 30px;
+  float: left;
 }
 
 
 #footer-navigation {
 
-  /*float: right;
-  max-width: 45%;*/
+  float: left;
+  padding: 30px;
 
-  /*padding: 200px;*/
   /*margin-top: 20px;
   padding-top: 20px;*/
 }
