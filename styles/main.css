@@ -131,6 +131,7 @@ padding: 30px;
 section#popular-posts {
   padding: 10px;
   margin-bottom: 100px;
+  margin-left: 50px;
 }
 
 .clearfix:after {
@@ -160,7 +161,7 @@ div {
 #popular-posts article {
   float: left;
   width: 25%;
-  height: 350px;
+  /*height: 350px;*/
 
 
   /*border: 10px;
@@ -171,8 +172,9 @@ div {
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
-
+  min-height: 50px;
   text-align: center;
+  vertical-align: text-top;
 }
 
 #popular-posts h3 {
@@ -199,7 +201,7 @@ div {
 #popular-posts p {
   margin: 30px;
   text-align: center;
-  min-height: 175px;
+  min-height: 50px;
 }
 
 #popular-posts a:hover {
@@ -324,6 +326,12 @@ p#disclaimer {
   float: left;
   padding: 30px;
 
+
   /*margin-top: 20px;
   padding-top: 20px;*/
+}
+
+#footer-navigation a {
+  text-decoration: none;
+  color: pink;
 }
