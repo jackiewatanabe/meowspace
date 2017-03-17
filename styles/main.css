@@ -129,16 +129,16 @@ padding: 30px;
 }*/
 
 section#popular-posts {
-  padding: 10px;
+  padding: 0 10%;
   margin-bottom: 100px;
-  margin-left: 50px;
+
 }
 
-.clearfix:after {
+/*.clearfix:after {
     content:" ";
     display:table;
     clear:both;
-}
+}*/
 
 div {
   margin: 30px;
@@ -156,23 +156,20 @@ div {
 #popular-posts h2 {
   font-family: 'Amatic SC', cursive;
   font-size: 3em;
+  margin: 20px;
 }
 
 #popular-posts article {
-  float: left;
-  width: 25%;
-  /*height: 350px;*/
-
-
-  /*border: 10px;
-  border-color: black;*/
-
+  /*float: left;*/
+  display: inline-block;
+  width: 28%;
   border: solid #000;
   border-width: 3 5px;
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
-  min-height: 50px;
+  min-height: 400px;
+  max-height: :450px;
   text-align: center;
   vertical-align: text-top;
 }
